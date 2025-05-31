@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get in touch with EcoStyle Living for more information on our eco-friendly products. We're here to help!" />
+  <meta name="keywords" content="contact eco style, customer support, sustainable products" />
+  <meta name="author" content="EcoStyle Living" />
+  <title>Contact Us | EcoStyle Living</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>EcoStyle Living</h1>
+  <nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html" >Products</a></li>
+    <li><a href="contact.html"class="active">Contact Us</a></li>
+    <li><a href="favorites.html">Favourites</a></li>
+    <li><a href="testimonials.html">Testimonials</a></li>
+  </ul>
+</nav>
+
+  </header>
+
+  <main>
+    <section>
+      <h2>Contact Us</h2>
+      <p>Have questions about our sustainable products? Want to know more about our eco-friendly initiatives? Fill out the form below to get in touch with us.</p>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 EcoStyle Living. All rights reserved.</p>
+    <p><small>This site is created for educational purposes only.</small></p>
+  </footer>
+
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent default form submission
+      window.location.href = "thankyou.html"; // Redirect to thank you page
+    });
+  </script>
+</body>
+</html>
